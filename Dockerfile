@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-MAINTAINER malinovka
+LABEL malinovka
 
 ENV PYTHONUNBUFFERED 1
 
