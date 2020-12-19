@@ -8,4 +8,4 @@ I'm testing my changes, still testing
 Writing next comment, to test checking
 
 # commands
-docker-compose run app sh -c --rm "python manage.py test && flake8"
+docker-compose run --rm app sh -c "python manage.py test && flake8"
