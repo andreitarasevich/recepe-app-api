@@ -1,12 +1,10 @@
-from .views import CreateTokenView
+from .views import CreateTokenView, CreateUserView
 from django.urls import path
-
-from . import views
 
 
 app_name = 'user'
 
 urlpatterns = [
-    path('create/', views.CreateUserView.as_view(), name='create'),
+    path('create/', CreateUserView.as_view(), name='create'),
     path('token/', CreateTokenView.as_view(), name='token'),
 ]
