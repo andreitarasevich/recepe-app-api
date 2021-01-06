@@ -7,10 +7,10 @@ from rest_framework.test import APIClient
 
 from core.models import Ingredient
 
-from recepe.serializers import IngredientSerializer
+from recipe.serializers import IngredientSerializer
 
 
-INGREDIENTS_URL = reverse("recepe:ingredient-list")
+INGREDIENTS_URL = reverse("recipe:ingredient-list")
 
 
 class PublichIngredientsApiTests(TestCase):

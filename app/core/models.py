@@ -39,7 +39,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Tag(models.Model):
-    """Tag to be used for recepe"""
+    """Tag to be used for recipe"""
     name = models.CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -51,7 +51,7 @@ class Tag(models.Model):
 
 
 class Ingredient(models.Model):
-    """Ingridient to be used for recepe"""
+    """Ingridient to be used for recipe"""
     name = CharField(max_length=255)
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
@@ -63,7 +63,7 @@ class Ingredient(models.Model):
 
 
 class Recipe(models.Model):
-    """Recipe to be used for recepe"""
+    """Recipe to be used for recipe"""
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.CASCADE

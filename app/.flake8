@@ -1,6 +1,6 @@
 [flake8]
 exclude = 
-    venv_recepe-app-api,
+    venv,
     migrations,
     __pychache__,
     manage.py,
